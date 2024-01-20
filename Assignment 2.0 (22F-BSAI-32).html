@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+
+    <style>
+        .ticket {
+            margin: 12px 22px;
+
+        }
+
+        body {
+            font-family: 'Libre Caslon Text', serif;
+
+            background-color: rgb(203, 238, 250);
+
+            font-size: 16PX;
+
+        }
+
+        .ticket h1 {
+            margin: 0px 7px;
+            padding: 10px 5px;
+            width: 650px;
+            color: blue;
+        }
+
+        .logo {
+            width: 220px;
+            height: 200px;
+            position: relative;
+            left: 66% !important;
+            top: -90px;
+        }
+
+        .logodiv {
+            height: 20px;
+        }
+
+        .logosdiv {
+            height: 20px;
+        }
+
+        .logos {
+            width: 220px;
+            height: 150px;
+            position: relative;
+            top: -90px;
+            left: 80% !important;
+        }
+
+        .some {
+            border: 2px solid rgb(243, 150, 150);
+            border-radius: 3px;
+            padding: 4px;
+            margin: 8px;
+            width: 180px;
+        }
+
+        .mom {
+            border: 2px solid rgb(243, 150, 150);
+            border-radius: 3px;
+            width: 400px;
+            padding: 4px;
+            margin: -8px 5px;
+        }
+
+        .date {
+            border: 2px solid rgb(243, 150, 150);
+            padding: 4px;
+            border-radius: 3px;
+            margin: 0px 5px;
+            width: 280px;
+        }
+
+        .flight {
+            border: 2px solid rgb(243, 150, 150);
+            border-radius: 3px;
+            padding: 4px;
+            width: 80px;
+            margin: 0px 5px;
+        }
+
+        #myclass {
+            border: 2px solid rgb(243, 150, 150);
+            border-radius: 3px;
+            padding: 4px;
+            width: 150px;
+            margin: 0px 5px;
+        }
+
+        .from {
+            border: 2px solid rgb(243, 150, 150);
+            padding: 4px;
+            border-radius: 3px;
+            margin: 17px 20px;
+            width: 350px;
+        }
+
+        .owe {
+            border: 2px solid rgb(153, 19, 102);
+            border-radius: 3px;
+
+        }
+
+        .table {
+            border: 2px solid rgb(104, 153, 137);
+            border-radius: 3px;
+            padding: 4px;
+        }
+
+        .view {
+            width: 33px;
+        }
+
+        .head {
+            border: 2px solid rgb(248, 115, 110);
+            border-radius: 3px;
+            padding: 4px;
+        }
+
+        #delivery {
+            border: 2px solid rgb(243, 150, 150);
+            border-radius: 3px;
+            padding: 4px 5px;
+
+            margin: 8px 10px;
+            width: 160px;
+        }
+
+        .tote {
+            margin-top: -5px;
+            margin-bottom: -25px;
+            font-size: 35px;
+            padding-left: 300px;
+        }
+
+        .tote1 {
+            font-size: 35px;
+        }
+
+        .print {
+            background-color: rgb(170, 88, 247);
+            border: 2px solid rgb(7, 4, 4);
+            border-radius: 3px;
+            color: rgb(236, 245, 245);
+            width: 120px;
+            padding: 6px;
+            margin: 5px;
+        }
+
+        .print:hover {
+            background-color: rgb(216, 161, 161);
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        #visit {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 533px;
+        }
+
+        a[target] {
+            font-size: 25px;
+        }
+
+        @media only screen and (max-width: 1250px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .logodiv {
+                display: none;
+            }
+
+            .logosdiv {
+                display: none;
+            }
+
+            .logos {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<!-- MOIZ AHMED MANSOORI
+              22F-BSAI-32 -->
+
+<body>
+    <header class="ticket">
+        <h1>AIR TICKET BOOKING REQUESTING FORM</h1>
+        <div class="logodiv">
+            <img class="logo" src="https://cdn.freebiesupply.com/logos/thumbs/2x/iata-logo.png" alt="logo">
+        </div>
+        <div class="logosdiv">
+            <img class="logos" src="https://cdn.pixabay.com/photo/2013/07/13/13/20/plane-160861_960_720.png" alt="logo">
+        </div>
+        <br>
+        
+        <h3>CUSTOMER DATA</h3>
+        <table>
+            <form>
+                <tbody>
+                    <tr>
+
+                        <td> First Name <input type="text" placeholder="Type your name" class="some"> </td>
+                        <td>Last Name <input type="text" placeholder="Type your Lastname" class="some"></td>
+                        <td> Telephone <input type="number" placeholder="Type your nNumber" class="some"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>City <input type="text" placeholder="Type your City" class="some"> </td>
+                        <td>Postal Code <input type="number" placeholder="Type your Postalcode" class="some"></td>
+                        <td> Fax <input type="text" id="mypassport" class="some"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td> Country <input type="text" placeholder="Type your Country" class="some"> </td>
+                        <td> E-mail <input type="email" placeholder="Type your e-mail" class="some"></td>
+
+                    </tr>
+
+                </tbody>
+            </form>
+        </table> <br>
+        <div class="name">
+            Address <input type="text" placeholder=" Type your address" class="mom">
+        </div> <br>
+        <h3>ITINERARY</h3>
+        <form action="/action_page.php">
+            <div class="byte">
+                <input type="checkbox" id="airline" name="flight" value="plan">
+                <label for="plain"> One way trip</label>
+            </div><br>
+            <table>
+                <form>
+                    <tbody>
+                        <tr>
+
+                            <td> Departing Date <input type="date" id="date" class="date"> </td>
+                            <td>Flight No <input type="number" id="mynumber" class="flight"></td>
+
+
+                        </tr>
+                        <tr>
+
+                            <td>From <input type="text" id="myname" class="from"> </td>
+                            <td> To <input type="text" id="mylast" class="from"></td>
+
+                        </tr>
+                        <td>Class <select name="Class" id="myclass">
+                                <option value="First Class">First Class</option>
+                                <option value="Buisness Class">Buisness Class</option>
+                                <option value="Economic Class">Economic Class</option>
+                            </select></td>
+
+                    </tbody>
+                </form>
+            </table> <br>
+            <form action="/action_page.php">
+                <div class="byte">
+                    <input type="checkbox" id="airline" name="flight" value="plan">
+                    <label for="plain"> Round trip</label>
+                </div><br>
+                <table>
+                    <form>
+                        <tbody>
+                            <tr>
+
+                                <td> Arrival Date <input type="date" id="date" class="date"> </td>
+                                <td> Flight No <input type="number" id="mynumber" class="flight"></td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>From <input type="text" id="myname" class="from"> </td>
+                                <td> To <input type="text" id="mylast" class="from"></td>
+
+                            </tr>
+                            <td> <select name="Class" id="myclass">
+                                    <option value="">First Class</option>
+                                    <option value="">Buisness Class</option>
+                                    <option value="">Economic Class</option>
+                                </select></td>
+
+                        </tbody>
+                    </form>
+                </table> <br>
+                <div>
+                    Comment Field: <br><textarea name="text" placeholder="Type comments......" id="" cols="120" rows="3"
+                        class="owe"></textarea>
+                </div>
+                <h3>PASSENGERS</h3>
+                <!-- Table -->
+
+                <table>
+                    <form>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>First Name</th>
+                                <th>Last name</th>
+                                <th>Passport Data</th>
+                                <th class="view">Expiration Date of Exit Visa</th>
+                                <th>Date of Birth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><input type="text" id="myname" class="head"> </td>
+                                <td> <input type="text" id="mylast" class="head"></td>
+                                <td> <input type="text" id="mypassport" class="head"></td>
+                                <td> <input type="text" id="myvisa" class="head"></td>
+                                <td> <input type="date" id="mybirth" class="head"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td> <input type="text" id="myname" class="table"> </td>
+                                <td> <input type="text" id="mylast" class="table"></td>
+                                <td> <input type="text" id="mypassport" class="table"></td>
+                                <td> <input type="text" id="myvisa" class="table"></td>
+                                <td> <input type="date" id="mybirth" class="table"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td> <input type="text" id="myname" class="table"> </td>
+                                <td> <input type="text" id="mylast" class="table"></td>
+                                <td> <input type="text" id="mypassport" class="table"></td>
+                                <td> <input type="text" id="myvisa" class="table"></td>
+                                <td> <input type="date" id="mybirth" class="table"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td> <input type="text" id="myname" class="table"> </td>
+                                <td> <input type="text" id="mylast" class="table"></td>
+                                <td> <input type="text" id="mypassport" class="table"></td>
+                                <td> <input type="text" id="myvisa" class="table"></td>
+                                <td> <input type="date" id="mybirth" class="table"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td> <input type="text" id="myname" class="table"> </td>
+                                <td> <input type="text" id="mylast" class="table"></td>
+                                <td> <input type="text" id="mypassport" class="table"></td>
+                                <td> <input type="text" id="myvisa" class="table"></td>
+                                <td> <input type="date" id="mybirth" class="table"></td>
+                            </tr>
+                        </tbody>
+                    </form>
+                </table> <br>
+                <div>
+                    Notes: <br><textarea name="text" placeholder="Type notes......" id="" rows="3" cols="120"
+                        class="owe"></textarea>
+                </div> <br>
+
+                <table>
+                    <form>
+                        <thead>
+                            <tr>
+                                <th class="tote1">Delivery</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <h3 class="tote">Delivery Address</h3>
+                                <td>Date of Delivery <input type="date" id="delivery"> </td>
+                                <td><textarea name="text" id="row" cols="70" rows="5" class="owe"
+                                        placeholder="Delivery Address..."></textarea> </td>
+                            </tr>
+                        </tbody>
+                    </form>
+                </table> <br>
+                <div class="para">
+                    <p>
+                        Dear Ladies and Gentlemen!Be advised that,if the booking request has been annulled after the
+                        ticket
+                        issuance,
+                        the possible fee to the Air company shall be paid by customer, irrespective of whether or not
+                        the
+                        ticket
+                        was
+                        actually received.
+                    </p>
+                    <button class="print">Print</button>
+                    <button class="print">send by email</button>
+                </div>
+                <div id="visit">
+                    For more details you can visit our website:
+                    <a href="https://www.iata.org" target="_blank">IATA Airlines</a>
+                </div>
+                <div>
+                    <h2> Instructions: </h2>
+                    Below are the most frequently used safety measures and why it's important to follow them:
+                    <ul type="square">
+                        <li>Window shades pulled up during take-offs and landings</li>
+                    </ul>
+                    <ul type="square">
+                        <li>Seats need to be in the upright position </li>
+                    </ul>
+                    <ul type="square">
+                        <li>Cell phones need to be in airplane mode</li>
+                    </ul>
+                    <ul type="square">
+                        <li>You need to be in your seat during take-offs and landings </li>
+                    </ul>
+                </div> <br>
+                <div>
+                    If you want to know about IATA Airline customer portal so watch this video <br><br>
+                    <iframe width="350" height="275" src="https://youtube.com/embed/iJ_9fcT7xVw">
+                    </iframe>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <html>
+                    
+                    
+    </header>
+
+</body>
+
+</html>
